@@ -1,0 +1,30 @@
+.cards-container .grocery-card {
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-right: 19px;
+  height: 64px;
+  border-radius: 6px;
+  min-width: 395px;
+  color: var(--text-grey);
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards-container .grocery-card .left-portion {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 60%;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 46px;
+}
+.cards-container .grocery-card .right-portion {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+  font-size: 28px;
+}

@@ -1,0 +1,16 @@
+.edit-parent {
+  height: 500px;
+  width: 682px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+}
+.edit-parent .left-edit {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.edit-parent .left-edit ul {
+  padding: unset;
+}
