@@ -1,0 +1,28 @@
+.calc-parent {
+  margin: 10px 453px;
+}
+.calc-parent > input {
+  width: 95%;
+  height: 50px;
+  background-color: var(--black);
+  border-radius: 12px;
+  text-align: right;
+  border: none;
+  color: var(--white);
+  font-size: 23px;
+  padding: 10px;
+}
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.button-grid button {
+  margin: 10px;
+  height: 37px;
+  color: var(--white);
+  background-color: var(--green);
+  border: none;
+  border-radius: 6px;
+  font-size: 21px;
+  cursor: pointer;
+}

@@ -9,15 +9,20 @@ const GroceryItemCard = ({ fromFlag, groceryItem }) => {
     (elem) => elem.item === groceryItem.item
   )[0];
   const dispatch = useDispatch();
+
+  function updateCount(count) {
+    return {
+      type: "UPDATE_COUNT",
+      count: parseInt(count),
+      item: currentGroceryItem.item,
+    };
+  }
   const handleClick = (action) => {
     const { item } = currentGroceryItem;
     switch (action) {
       case "delete":
         dispatch({ type: "DEL_ITEM", item: item });
         break;
-      // case "edit":
-      //   dispatch({ type: "EDIT", item: item });
-      //   break;
       case "purchase":
         dispatch({ type: "PURCHASE", item: item });
         break;
@@ -71,6 +76,13 @@ const GroceryItemCard = ({ fromFlag, groceryItem }) => {
             >
               ADD
             </button>
+            <input
+              type="number"
+              style={{ width: "65px" }}
+              placeholder="Quantity"
+              min="1"
+              onChange={(e) => dispatch(updateCount(e.target.value))}
+            ></input>
           </div>
         )}
       </div>

@@ -2,6 +2,7 @@ import "./BasicLayout.css";
 import React from "react";
 import Header from "../components/Header";
 import Edit from "../pages/Edit";
+import Calculator from '../pages/Calculator';
 import Create from "../pages/Create";
 import {
   Route,
@@ -27,7 +28,7 @@ const BasicLayout = () => {
           />
           <Route path="/view-list" component={Create} />
           <Route path="/edit-list" component={Edit} />
-          
+          <Route path="/calculator" component={Calculator} />
         </Switch>
       </div>
     </div>

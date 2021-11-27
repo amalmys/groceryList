@@ -23,7 +23,7 @@
 }
 .cards-container .grocery-card .right-portion {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, auto);
   gap: 28px;
   align-items: center;
   font-size: 28px;

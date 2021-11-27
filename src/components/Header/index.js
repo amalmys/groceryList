@@ -29,6 +29,16 @@ const Header = () => {
             >
               Edit
             </NavLink>
+            <NavLink
+              to="/calculator"
+              className="navigation"
+              activeClassName="selected-nav"
+              // className={isActive =>
+              //   isActive ? "selected-nav" : "navigation"
+              // }
+            >
+              Calculator
+            </NavLink>
           </div>
           <div className="right-section">GROCERY LIST</div>
         </div>
